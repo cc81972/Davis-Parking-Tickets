@@ -1,0 +1,17 @@
+{% extends "master.html" %}
+
+{% block title %}
+  Details about {{ mytickets.location }} ticket on {{ mytickets.date }}
+{% endblock %}
+
+
+{% block content %}
+  <h1>{{ mytickets.location }} {{ mytickets.date }}</h1>
+  
+  <p>Location {{ mytickets.location }}</p>
+  <p>Date : {{ mytickets.date }}</p>
+  
+  <p>Back to <a href="/tickets">Tickets</a></p>
+  <p><a href="/">HOME</a></p>
+  
+{% endblock %}

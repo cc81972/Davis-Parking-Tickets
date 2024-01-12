@@ -1,0 +1,17 @@
+{% extends "master.html" %}
+
+{% block title %}
+  Davis Tickets - List of all tickets
+{% endblock %}
+
+
+{% block content %}
+  <h1>Tickets</h1>
+  
+  <ul>
+    {% for x in mytickets %}
+      <li><a href="details/{{ x.id }}">{{ x.location }} {{ x.date }}</a></li>
+    {% endfor %}
+    <p><a href="/">HOME</a></p>
+  </ul>
+{% endblock %}
